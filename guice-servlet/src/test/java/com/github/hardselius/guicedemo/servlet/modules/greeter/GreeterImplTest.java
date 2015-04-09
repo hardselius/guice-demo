@@ -21,7 +21,7 @@ public class GreeterImplTest {
 
                     @Provides @Singleton
                     public AuthService provideAuthService() {
-                        return new AuthDummy();
+                        return new DummyAuth();
                     }
                 }
         );
@@ -50,7 +50,7 @@ public class GreeterImplTest {
                 .isEqualTo("Hello, Stranger!");
     }
 
-    private static class AuthDummy implements AuthService {
+    private static class DummyAuth implements AuthService {
         private String user;
         private boolean isLoggedIn = false;
 

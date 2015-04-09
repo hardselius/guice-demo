@@ -5,9 +5,12 @@ import com.github.hardselius.guicedemo.patterns.ServiceImpl;
 
 public class ServiceFactory {
 
-    private static Service instance = new ServiceImpl();
+    private static Service instance = null;
 
     public static Service getInstance() {
+        if (instance == null) {
+            instance  = new ServiceImpl();
+        }
         return instance;
     }
 

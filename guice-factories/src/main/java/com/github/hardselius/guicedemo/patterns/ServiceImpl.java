@@ -2,7 +2,8 @@ package com.github.hardselius.guicedemo.patterns;
 
 public class ServiceImpl implements Service {
     @Override
-    public String go() {
-        return "Some expensive stuff...";
+    public boolean go() {
+        System.out.println("Something expensive going on...");
+        return true;
     }
 }

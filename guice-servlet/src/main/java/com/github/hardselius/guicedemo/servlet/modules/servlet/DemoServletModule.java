@@ -11,6 +11,6 @@ public class DemoServletModule extends ServletModule {
         filter("*//*").through(GuiceFilter.class)*/;
 
         bind(DemoServlet.class).in(Singleton.class);
-        serve("/demoservlet").with(DemoServlet.class);
+        serve("/").with(DemoServlet.class);
     }
 }
