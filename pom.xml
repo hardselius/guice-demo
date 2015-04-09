@@ -11,6 +11,7 @@
     <modules>
         <module>guice-servlet</module>
         <module>guice-jersey2</module>
+        <module>guice-factories</module>
     </modules>
     <name>Guice Demo</name>
 
